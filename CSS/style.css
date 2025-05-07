@@ -1,0 +1,94 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row2{
+    display: flex;
+
+}
+
+.font{
+    font-size:12px ;
+    color: rgba(240, 248, 255, 0.562);
+
+}
+/* common css ends hear */
+
+/* navber css start hear */
+
+#navber .container{
+    background-color: black;
+    color: aliceblue;
+    /* height: 60px ; */
+}
+
+#navber .container .nav-lago a img{
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 5px;
+}
+#navber .container .nav-lago a img:hover{
+
+    border:2px solid white; ;
+}
+#navber .container ul li {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    
+}
+#navber .container ul li:hover{
+    border: 2px solid white;
+}
+
+#navber .container ul li a{
+    color: aliceblue;
+   
+    
+}
+#navber .navloction .p1{
+    margin-left: 2px;
+}
+#navber .navloction a i{
+padding-top: 14px;
+}
+#navber .navsearch #btn1{
+    background-color: white;
+    width:30px ;
+    height: 30px;
+    /* padding-left: 0px; */
+    border: none;
+    /* border-radius: 2px; */
+
+}
+
+#navber .navsearch #select{
+    width: 100px;
+    height: 30px;
+    /* border-radius: 4px; */
+}
+
+#navber .navsearch .form-control{
+    height:30px;
+    width: 300px;
+    /* border-radius: 3px; */
+}
+/* navber css ends hear */
