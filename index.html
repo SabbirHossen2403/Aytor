@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aytor</title>
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,30 +13,1287 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./CSS/slick.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
-    <link rel="stylesheet" href="./CSS/venobox.min.css">
-    <link rel="stylesheet" href="./CSS/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/venobox.min.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/responsive.css" />
   </head>
   <body>
-
     <!-- nav start hear -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand img-fluid" href="#"
+          ><img src="./Images/Logo.png" alt=""
+        /></a>
+        <a
+          class=""
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <iconify-icon
+            class="d-lg-none d-block"
+            icon="line-md:menu"
+            width="24"
+            height="24"
+          ></iconify-icon>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Features <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="icons d-flex">
+            <a href="#"
+              ><iconify-icon
+                icon="ic:outline-search"
+                width="24"
+                height="24"
+              ></iconify-icon
+            ></a>
+            <a href="#"
+              ><iconify-icon
+                icon="bx:user"
+                width="22"
+                height="22"
+              ></iconify-icon
+            ></a>
+            <a href="#"
+              ><iconify-icon
+                icon="basil:heart-outline"
+                width="24"
+                height="24"
+              ></iconify-icon
+            ></a>
+            <a class="cartnumberbox" href="#"
+              ><iconify-icon
+                icon="bytesize:bag"
+                width="22"
+                height="22"
+              ></iconify-icon>
+              <span id="cartnumber">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-
-  
-    
-    
     <!-- nav ends hear -->
 
+    <!-- offcanvas -->
 
-<script src="./js/jquery-3.7.1.min.js"></script>
-<script src="./js/slick.min.js"></script>
-<script src="./js/aos.js"></script>
-<script src="./js/venobox.min.js"></script>
-<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
-<script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/app.js"></script>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <img
+            class="img-fluid"
+            style="width: 90px"
+            src="./Images/Logo.png"
+            alt=""
+          />
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Features <i class="fa-solid fa-angle-down"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- offcanvas ends here -->
+
+    <!-- footer  -->
+    <footer class="d-block d-md-none d-lg-none">
+      <div class="row menu">
+        <div class="col-3">
+          <a href="#" class="link">
+            <span class="link-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+            </span>
+            <span class="link-title">Home</span>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#" class="link">
+            <span class="link-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.001 4.529a6 6 0 0 1 8.242.228a6 6 0 0 1 .236 8.236l-8.48 8.492l-8.478-8.492a6 6 0 0 1 8.48-8.464m6.826 1.641a4 4 0 0 0-5.49-.153l-1.335 1.198l-1.336-1.197a4 4 0 0 0-5.686 5.605L12 18.654l7.02-7.03a4 4 0 0 0-.193-5.454"
+                />
+              </svg>
+            </span>
+            <span class="link-title">Like</span>
+          </a>
+        </div>
+
+        <div class="col-3">
+          <a href="#" class="link">
+            <span class="link-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M0 1h4.764l.545 2h18.078l-3.666 11H7.78l-.5 2H22v2H4.72l1.246-4.989L3.236 3H0zm7.764 11h10.515l2.334-7H5.855zM4 21a2 2 0 1 1 4 0a2 2 0 0 1-4 0m14 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0"
+                />
+              </svg>
+            </span>
+            <span class="link-title">cart</span>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="#" class="link">
+            <span class="link-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="128"
+                  cy="96"
+                  r="64"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="16"
+                ></circle>
+                <path
+                  d="M30.989,215.99064a112.03731,112.03731,0,0,1,194.02311.002"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+            </span>
+            <span class="link-title">Profile</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+
+    <!-- banner  -->
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="single-item-rtl">
+              <div>
+                <div class="bannerinfo">
+                  <h6>Mega Sale</h6>
+                  <h1>Up To 35% Off</h1>
+                  <p>
+                    Objectively incubate enabled innovation through leveraged
+                    mindshare. Competently.
+                  </p>
+                  <button href="#" class="button" style="--clr: #7808d0">
+                    Shop Now
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div class="bannerinfo">
+                  <h6>Mega Sale</h6>
+                  <h1>Up To 55% Off</h1>
+                  <p>
+                    Objectively incubate enabled innovation through leveraged
+                    mindshare. Competently.
+                  </p>
+                  <button href="#" class="button" style="--clr: #7808d0">
+                   Shop Now
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div class="bannerinfo">
+                  <h6>Mega Sale</h6>
+                  <h1>Up To 75% Off</h1>
+                  <p>
+                    Objectively incubate enabled innovation through leveraged
+                    mindshare. Competently.
+                  </p>
+                  <button href="#" class="button" style="--clr: #7808d0">
+                       Shop Now
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner  ends -->
+
+    <!-- producthover   -->
+
+    <section id="producthover"   >
+      <div class="container">
+        <div class="row" >
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="leftimg">
+            <a href="#"><img class="img-fluid" src="./Images/Mask here2.png" alt="">
+
+              <ul class="hoverlist">
+                <li>Beauty Cream</li>
+                <li>Shop Now <i class="fa-solid fa-arrow-right"></i></li>
+              </ul>
+
+            </a>
+         </div>
+            <div class="leftimg2">
+            <a href="#"><img class="img-fluid" src="./Images/Item 3.png" alt="">
+
+              <ul class="hoverlist2 ">
+                <li >Fairness Cream</li>
+                <li>Shop Now <i class="fa-solid fa-arrow-right"></i></li>
+              </ul>
+
+            </a>
+         </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+             <div class="rightimg">
+            <a  href="#"><img class="img-fluid" src="./Images/Item 2.png" alt="">
+            
+             <ul class="hoverlist3 ">
+                <li >Dry Skin</li>
+                <li>Shop Now <i class="fa-solid fa-arrow-right"></i></li>
+              </ul>
+
+            
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- producthover  ends -->
+
+
+    <!-- newArrivals   -->
+
+
+<section id="newArrivals">
+  <div class="container">
+    <h2>New Arrivals Products</h2>
+<div class="row g-2">
+  <div class="autoplay">
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/BG.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/product 3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/product 4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/product 3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/product 4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/product 3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/BG.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  <div class="col text-center" data-aos="fade-left" >
+    <div class="card h-100">
+      <img src="./Images/BG.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<span class="leftArrow"><i class="fa-solid fa-angle-left fa-2xl"></i></span>
+<span class="rightArrow"><i class="fa-solid fa-angle-right fa-2xl"></i></span>
+</div>
+  </div>
+</section>
+
+
+
+    <!-- newArrivals  ends -->
+
+
+    <!-- cosmetics   -->
+
+
+ <section id="cosmetics" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="cosmeticsdiv">
+              <div>
+                <div class="cosmeticsinfo">
+                  <h1> <span class="d-block">Get Up To 35% Off all</span> Best Spa Cosmetics <span class="d-block">Cream</span> </h1>
+                  <p>
+                   <span class="d-block">Holisticly maximize interoperable action items for effective </span> e-business. Globally impact enterprise-wide niche markets <span class="d-block">through dynamic.</span> </p>
+                  <button href="#" class="button" style="--clr: #7808d0">
+                   Shop Now
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    
+                  </button>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cosmetics  ends -->
+
+
+    <!-- bestseller   -->
+
+
+<section id="bestseller">
+  <div class="container">
+    <h2>Best Seller Products</h2>
+    <div class="row  mb-3">
+      <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+       <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+       <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+      <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    </div>
+    <div class="row ">
+      <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+       <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+       <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+      <div class="col text-center" data-aos="fade-up" >
+    <div class="card h-100">
+      <img src="./Images/Mask here7.png" class="card-img card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">$150.65</h5>
+        <h4 class="card-text">Lotion Shower gel</h4>
+        <span>
+          <div class="rating">
+  <input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>
+</div>
+        </span>
+<div class="action-icons" id="actionIcons">
+          <div class="icon-button cart-icon">
+            <i data-lucide="shopping-cart"></i>
+          </div>
+          <div class="icon-button like-icon">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="icon-button view-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <div class="icon-button share-icon">
+            <i data-lucide="share-2"></i>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    </div>
+
+<div class="buttons" data-aos="fade-up">
+ <a href="#" class="button" style="--clr: #7808d0">
+                    See All Products
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+</div>
+
+
+  </div>
+</section>
+
+
+    <!-- bestseller  ends -->
+
+
+
+
+
+
+
+    <!-- dealsdays   -->
+
+<section id="dealsdays">
+  <div class="container">
+    <h2>Deals Of The Days</h2>
+    <div class="timer">
+      <div class="countdown-container">
+    <div class="countdown-segment">
+      <div id="days" class="countdown-value">0</div>
+      <div class="countdown-label">Days</div>
+    </div>
+    <div class="separator">
+      <span class="dot">·</span>
+      <span class="dot">·</span>
+    </div>
+    <div class="countdown-segment">
+      <div id="hours" class="countdown-value">00</div>
+      <div class="countdown-label">Hour</div>
+    </div>
+    <div class="separator">
+      <span class="dot">·</span>
+      <span class="dot">·</span>
+    </div>
+    <div class="countdown-segment">
+      <div id="minutes" class="countdown-value">00</div>
+      <div class="countdown-label">Minute</div>
+    </div>
+    <div class="separator">
+      <span class="dot">·</span>
+      <span class="dot">·</span>
+    </div>
+    <div class="countdown-segment">
+      <div id="seconds" class="countdown-value">00</div>
+      <div class="countdown-label">Sec</div>
+    </div>
+  </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="bgimg">
+          <img class="img-fluid" src="./Images/Mask here15.png" alt="">
+        </div>
+        <div class="bgtitle">
+          <h5>Fairness Cream</h5>
+          <h1>Get Up To 35% Off</h1>
+          <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+          <h4>$256.35 <span>$356.35</span></h4>
+
+        </div>
+      </div>
+     
+      <div class="col-lg-6">
+        <div class="bgimg">
+          <img class="img-fluid" src="./Images/Mask here15.png" alt="">
+        </div>
+        <div class="bgtitle">
+          <h5>Fairness Cream</h5>
+          <h1>Get Up To 35% Off</h1>
+          <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+          <h4>$256.35 <span>$356.35</span></h4>
+
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- dealsdays  ends -->
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./js/venobox.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
