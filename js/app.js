@@ -148,3 +148,7 @@ $('.deaksdayslid').slick({
   ]
 });
 });
+
+new VenoBox({
+    selector: '.my-video-links',
+});
